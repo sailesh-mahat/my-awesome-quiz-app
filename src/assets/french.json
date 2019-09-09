@@ -1,0 +1,47 @@
+[
+  {
+    "label": "What is Hello in french?",
+    "choices": [
+      {"value": "Au revoir", "correct": false},
+      {"value": "Bonjour", "correct": true},
+      {"value": "Tant pis", "correct": false},
+      {"value": "Salut!", "correct": false}
+    ]
+  },
+  {
+    "label": "What is Goodbye in french?",
+    "choices": [
+      {"value": "Au revoir", "correct": true},
+      {"value": "Bonjour", "correct": false},
+      {"value": "Tant pis", "correct": false},
+      {"value": "Salut!", "correct": false}
+    ]
+  },
+  {
+    "label": "What is the Capital City of France?",
+    "choices": [
+      {"value": "Bordeaux", "correct": false},
+      {"value": "Marseille", "correct": false},
+      {"value": "London", "correct": false},
+      {"value": "Paris", "correct": true}
+    ]
+  },
+  {
+    "label": "What is a famous french Football Player?",
+    "choices": [
+      {"value": "Thomas Müller", "correct": false},
+      {"value": "Ronaldinho", "correct": false},
+      {"value": "Zinedine Zidane", "correct": true},
+      {"value": "Azamat Bagatov", "correct": false}
+    ]
+  },
+  {
+    "label": "What is the name of the river in Paris?",
+    "choices": [
+      {"value": "Weser", "correct": false},
+      {"value": "Seine", "correct": true},
+      {"value": "Elbe", "correct": false},
+      {"value": "Rhein", "correct": false}
+    ]
+  }
+]
