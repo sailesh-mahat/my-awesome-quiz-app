@@ -1,6 +1,8 @@
 <div class="quizWrapper welcome">
-  <h1>Best Quizzes Ever!!!</h1>
-  <div *ngFor="let quiz of quizzes">
-    <a [routerLink]="['/', quiz.name]" class="btn btn-primary">{{quiz.description}}</a>
-  </div>
+  <img src="../assets/quiz-2191229_1280.png" alt="Logo saying quiz night">
+    <div class="chooseQuiz">
+      <div *ngFor="let quiz of quizzes" class="chooseQuiz__item">
+        <a [routerLink]="['/', quiz.name]" class="btn btn-primary">{{quiz.description}}</a>
+      </div>
+    </div>
 </div>

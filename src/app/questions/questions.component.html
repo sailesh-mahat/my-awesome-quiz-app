@@ -8,10 +8,13 @@
       </app-question-form>
 
       <button
+      <div class="centerButon">
+        <button
           (click)="nextOrViewResults()"
           [disabled]="!answers.values[currentQuestionIndex]"
-            >{{currentQuestionIndex === questions.length - 1 ? 'View results' : 'Next'}}</button>
-          </div>
+        >{{currentQuestionIndex === questions.length - 1 ? 'View results' : 'Next'}}</button>
+      </div>
+    </div>
 
       <app-results *ngIf="showResults" [answers]="answers"></app-results>
   </div>
