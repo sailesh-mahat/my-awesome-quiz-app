@@ -1,26 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { QuestionsService } from '../questions.service';
-import { Quiz } from '../quiz.model';
+import { Quiz } from '../quiz.model'
 
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.scss']
 })
-
 export class WelcomeComponent implements OnInit {
 
-  private quizzes: Quiz[];
+  quiz: Quiz[];
 
-    constructor(private route: ActivatedRoute, private questionsService: QuestionsService) {
-      this.questionsService.getQuizzes()
-        .subscribe(quizzes => {
-          this.quizzes = quizzes;
-        });
-    }
+  constructor(public questionsService: QuestionsService) {}
 
   ngOnInit() {
+
+    this.questionsService.getQuizzes()
+      .subscribe(quiz => {
+        this.quiz= quiz
+      })
   }
 
+  reset(){
+    this.quiz=undefined
+  }
 }

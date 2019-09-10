@@ -1,86 +1,47 @@
 [
   {
-    "label": "What is 2 + 3?",
+    "label": "What is 15 * 5?",
     "choices": [
-      {
-        "value": "5",
-        "correct": true
-      },
-      {
-        "value": "15",
-        "correct": false
-      },
-      {
-        "value": "3",
-        "correct": false
-      },
-      {
-        "value": "pi",
-        "correct": false
-      }
+      {"value": "75", "correct": true},
+      {"value": "65", "correct": false},
+      {"value": "45", "correct": false},
+      {"value": "pi", "correct": false}
     ]
   },
   {
-    "label": "What is 3 - 9?",
+    "label": "What is 14 - 17?",
     "choices": [
-      {
-        "value": "3",
-        "correct": false
-      },
-      {
-        "value": "-6",
-        "correct": true
-      },
-      {
-        "value": "Bonjour",
-        "correct": false
-      },
-      {
-        "value": "pi",
-        "correct": false
-      }
+      {"value": "3", "correct": false},
+      {"value": "-3", "correct": true},
+      {"value": "1417", "correct": false},
+      {"value": "2.5", "correct": false}
     ]
   },
   {
-    "label": "What is 88 / 4?",
+    "label": "What is 3 * 9?",
     "choices": [
-      {
-        "value": "-22",
-        "correct": false
-      },
-      {
-        "value": "22",
-        "correct": true
-      },
-      {
-        "value": "200",
-        "correct": false
-      },
-      {
-        "value": "11",
-        "correct": false
-      }
+      {"value": "27", "correct": true},
+      {"value": "12", "correct": false},
+      {"value": "33", "correct": false},
+      {"value": "6", "correct": false}
     ]
   },
   {
     "label": "What is the root of 144?",
     "choices": [
-      {
-        "value": "14",
-        "correct": false
-      },
-      {
-        "value": "7",
-        "correct": true
-      },
-      {
-        "value": "12",
-        "correct": false
-      },
-      {
-        "value": "18",
-        "correct": false
-      }
+      {"value": "18", "correct": false},
+      {"value": "-6", "correct": false},
+      {"value": "12", "correct": true},
+      {"value": "14", "correct": false}
+    ]
+  },
+  {
+    "label": "What is 2 + 3 * 8 ?",
+    "choices": [
+      {"value": "36", "correct": false},
+      {"value": "26", "correct": true},
+      {"value": "30", "correct": false},
+      {"value": "35", "correct": false}
     ]
   }
 ]

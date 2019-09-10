@@ -12,9 +12,9 @@ export class QuestionFormComponent implements OnInit {
   @Input() question: Question;
   @Output() onChoiceMade = new EventEmitter<string>();
 
-  private form: FormGroup;
+  form: FormGroup;
 
-  ngOnInit() {
+  ngOnInit(){
     this.form = new FormGroup({
       choice: new FormControl()
     });
@@ -23,6 +23,7 @@ export class QuestionFormComponent implements OnInit {
   }
 
   onChange = () => {
-    this.onChoiceMade.emit(this.form.value.choice);
+  this.onChoiceMade.emit(this.form.value.choice);
   }
+
 }

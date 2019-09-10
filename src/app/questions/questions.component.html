@@ -1,21 +1,21 @@
-<div class="quizWrapper">
-  <div *ngIf="quiz && !questions"></div>
-  <div class="quiz" *ngIf="questions">
-    <div class="questions inputGroup" *ngIf="!showResults">
-      <app-question-form
-        [question]="questions[currentQuestionIndex]"
-        (onChoiceMade)="updateChoice($event)">
-      </app-question-form>
+<div *ngIf="quiz && !questions" class="spinner-grow text-primary"></div>
 
-      <button
-      <div class="centerButon">
-        <button
-          (click)="nextOrViewResults()"
-          [disabled]="!answers.values[currentQuestionIndex]"
-        >{{currentQuestionIndex === questions.length - 1 ? 'View results' : 'Next'}}</button>
-      </div>
-    </div>
+<mat-card *ngIf="questions">
 
-      <app-results *ngIf="showResults" [answers]="answers"></app-results>
+  <div class="questions" *ngIf="!showResults">
+    <app-question-form
+      [question]="questions[currentQuestionIndex]"
+      (onChoiceMade)="updateChoice($event)">
+    </app-question-form>
+    <mat-card-actions>
+    <button
+      mat-button
+      class="btn btn-success btn-primary"
+      (click)="nextOrViewResults()"
+      [disabled]="!answers.values[currentQuestionIndex]">
+      {{currentQuestionIndex === questions.length -1 ? 'View results' : 'Next'}}</button>
+    </mat-card-actions>
   </div>
-</div>
+
+  <app-results *ngIf="showResults" [answers]="answers"></app-results>
+</mat-card>

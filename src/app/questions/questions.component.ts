@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-//import { switchMap } from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
 
 import { QuestionsService } from '../questions.service';
 import { Quiz, Answers, Choice, Question } from '../quiz.model';
@@ -13,18 +13,18 @@ import { Quiz, Answers, Choice, Question } from '../quiz.model';
 })
 export class QuestionsComponent implements OnInit {
 
-  private quiz: Quiz;
-  private answers: Answers;
-  private questions: Question[];
-  private currentQuestionIndex: number;
+  quiz: Quiz;
+  answers: Answers;
+  questions: Question[];
+  currentQuestionIndex: number;
 
-  private showResults = false;
+  showResults = false;
 
-  constructor(private route: ActivatedRoute, private questionsService: QuestionsService) {}
+  constructor(private route: ActivatedRoute, public questionsService: QuestionsService){}
 
   ngOnInit() {
 
-    this.questionsService.getQuestions(this.route.snapshot.params.quizId)
+    this.questionsService.getQuestion(this.route.snapshot.params.quizId)
       .subscribe(questions => {
         this.questions = questions;
         this.answers = new Answers();
@@ -32,12 +32,12 @@ export class QuestionsComponent implements OnInit {
       });
   }
 
-  updateChoice(choice: Choice) {
+  updateChoice(choice: Choice){
     this.answers.values[this.currentQuestionIndex] = choice;
   }
 
-  nextOrViewResults() {
-    if (this.currentQuestionIndex === this.questions.length - 1) {
+  nextOrViewResults(){
+    if (this.currentQuestionIndex === this.questions.length - 1){
       this.showResults = true;
       return;
     }
@@ -45,11 +45,12 @@ export class QuestionsComponent implements OnInit {
     this.currentQuestionIndex++;
   }
 
-  reset() {
+  reset(){
     this.quiz = undefined;
     this.questions = undefined;
     this.answers = undefined;
     this.currentQuestionIndex = undefined;
   }
+
 
 }

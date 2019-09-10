@@ -18,30 +18,21 @@
     ]
   },
   {
-    "label": "What is the Capital City of France?",
+    "label": "What is bonne journée in english?",
     "choices": [
-      {"value": "Bordeaux", "correct": false},
-      {"value": "Marseille", "correct": false},
-      {"value": "London", "correct": false},
-      {"value": "Paris", "correct": true}
+      {"value": "Good morning", "correct": false},
+      {"value": "Good night", "correct": false},
+      {"value": "Good day", "correct": true},
+      {"value": "Goodbye", "correct": false}
     ]
   },
   {
-    "label": "What is a famous french Football Player?",
+    "label": "What is bon appétit in english?",
     "choices": [
-      {"value": "Thomas Müller", "correct": false},
-      {"value": "Ronaldinho", "correct": false},
-      {"value": "Zinedine Zidane", "correct": true},
-      {"value": "Azamat Bagatov", "correct": false}
-    ]
-  },
-  {
-    "label": "What is the name of the river in Paris?",
-    "choices": [
-      {"value": "Weser", "correct": false},
-      {"value": "Seine", "correct": true},
-      {"value": "Elbe", "correct": false},
-      {"value": "Rhein", "correct": false}
+      {"value": "Bonjour", "correct": false},
+      {"value": "Tant pis", "correct": false},
+      {"value": "Salut!", "correct": false},
+      {"value": "Enjoy your meal", "correct": true}
     ]
   }
 ]
