@@ -1,0 +1,38 @@
+[
+  {
+    "label": "What is Hello in french?",
+    "choices": [
+      {"value": "Au revoir", "correct": false},
+      {"value": "Bonjour", "correct": true},
+      {"value": "Tant pis", "correct": false},
+      {"value": "Salut!", "correct": false}
+    ]
+  },
+  {
+    "label": "What is Goodbye in french?",
+    "choices": [
+      {"value": "Au revoir", "correct": true},
+      {"value": "Bonjour", "correct": false},
+      {"value": "Tant pis", "correct": false},
+      {"value": "Salut!", "correct": false}
+    ]
+  },
+  {
+    "label": "What is bonne journée in english?",
+    "choices": [
+      {"value": "Good morning", "correct": false},
+      {"value": "Good night", "correct": false},
+      {"value": "Good day", "correct": true},
+      {"value": "Goodbye", "correct": false}
+    ]
+  },
+  {
+    "label": "What is bon appétit in english?",
+    "choices": [
+      {"value": "Bonjour", "correct": false},
+      {"value": "Tant pis", "correct": false},
+      {"value": "Salut!", "correct": false},
+      {"value": "Enjoy your meal", "correct": true}
+    ]
+  }
+]
